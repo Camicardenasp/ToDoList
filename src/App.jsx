@@ -9,7 +9,9 @@ const appTitle="To-Do-app";
 const list=[
   { id: 1, title: "test #1", completed: false },
   { id: 2, title: "test #2", completed: false },
-  { id: 3, title: "test #3", completed: false }
+  { id: 3, title: "test #3", completed: false }, 
+  { id: 4, title: "test Xiomara", completed: false },
+  { id: 5, title: "test Camilo", completed: false }
 ];
 
 const App=() => {
@@ -20,7 +22,7 @@ const App=() => {
   };
 
   const removeTodo = (id) => {
-    setTodoList((oldlist) => oldlist.filter((item => item.id!=id)))
+    setTodoList((oldlist) => oldlist.filter((item => item.id!==id)))
   };
   
   return <div className="ui container center aligned">
