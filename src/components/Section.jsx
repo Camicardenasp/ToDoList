@@ -1,11 +1,11 @@
-import React, { Children } from 'react'
+import React from "react";
 
-function Section({children}) {
+const Section = ({ children }) => {
     return (
-    <div style={{margin: "50px"}} >
-        {children}
-    </div>
-    )
-}
+        <div style={{ margin: "50px" }}>
+            {children}
+        </div>
+    );
+};
 
-export default Section
+export default Section;

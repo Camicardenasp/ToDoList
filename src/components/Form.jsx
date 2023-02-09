@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 
-const Form=({ addTodo }) => {
-    const [inputValue, setInputValue]=useState("");
+const Form = ({ addTodo }) => {
+    const [inputValue, setInputValue] = useState("");
 
-    const handleInputChange=(e) => {
+    const handleInputChange = (e) => {
         setInputValue(e.target.value);
     };
 
-    const handleFormSubmit=(e) => {
+    const handleFormSubmit = (e) => {
         e.preventDefault();
 
-        if (inputValue.trim()==="") return;
+        if(inputValue.trim() === "") return;
 
         addTodo({ title: inputValue, completed: false });
         setInputValue("");
     };
-
+    
     return (
         <form className="ui form" onSubmit={handleFormSubmit}>
             <div className="ui grid center aligned">
@@ -28,7 +28,7 @@ const Form=({ addTodo }) => {
                             placeholder="Enter something to do..."
                         />
                     </div>
-
+                    
                     <div className="column one wide">
                         <button type="submit" className="ui button circular icon green"><i className="white plus icon"></i></button>
                     </div>
@@ -38,4 +38,4 @@ const Form=({ addTodo }) => {
     );
 };
 
-export default Form
+export default Form;
