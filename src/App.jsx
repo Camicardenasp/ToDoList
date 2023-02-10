@@ -6,8 +6,9 @@ import todos from "./apis";
 import Form from "./components/Form";
 import Section from "./components/Section";
 import List from "./components/List";
+import Flor from "./assets/Floriculture.jpg"
 
-const appTitle="To-Do App";
+const appTitle="Flores del Tambo";
 
 const App=() => {
   const [todoList, setTodoList]=useState([]);
@@ -36,9 +37,11 @@ const App=() => {
   };
 
   return (
-    <div className="ui container center aligned">
+    <div className="ui container center aligned" style={{backgroundImage: Flor}}>
       <Section>
         <h1>{appTitle}</h1>
+        <img src="/vite.png" alt="" style={{maxHeight: "80px", paddingTop: "10px"}}/>
+        <h3>Lista de Tareas Diarias</h3>
       </Section>
 
       <Section>

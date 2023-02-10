@@ -20,17 +20,17 @@ const Form = ({ addTodo }) => {
         <form className="ui form" onSubmit={handleFormSubmit}>
             <div className="ui grid center aligned">
                 <div className="row">
-                    <div className="column five wide">
+                    <div className="column seven wide">
                         <input
                             value={inputValue}
                             onChange={handleInputChange}
                             type="text"
-                            placeholder="Enter something to do..."
+                            placeholder="Agrega una tarea diaria de siembra"
                         />
                     </div>
                     
-                    <div className="column one wide">
-                        <button type="submit" className="ui button circular icon green"><i className="white plus icon"></i></button>
+                    <div className="column two wide">
+                        <button type="submit" className="ui button circular icon pink"><i className="white plus icon"></i></button>
                     </div>
                 </div>
             </div>
