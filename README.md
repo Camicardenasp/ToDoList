@@ -1,3 +1,30 @@
+# DESCRIPTION ToDoList
+
+A simple and easy-to-use task management application that helps you stay organized and get things done.
+Features
+
+   + Create and manage tasks with due dates and descriptions
+   + Mark tasks as complete or incomplete
+   + Edit and delete existing tasks
+   + Sort tasks by due date or creation date
+   + View completed tasks and easily re-activate them
+   + Responsive design for use on desktop and mobile devices
+   
+# Usage
+
+To use ToDoList, simply follow these steps:
+
+    + Go to the ToDoList URL
+    + Create a new task by entering a task name, due date, and description (optional)
+    + Click "Add Task" to add the task to your list
+    Repeat steps 2-3 to add additional tasks
+    + Use the checkboxes to mark tasks as complete or incomplete
+    + Use the "Edit" and "Delete" buttons to make changes to existing tasks
+    + Use the "Sort" dropdown to sort tasks by due date or creation date
+    + View completed tasks by clicking the "Show Completed" button
+
+# INSTALATION
+
 # React Todo App
 A to-do list app made with React as front-end and Node, Express and MongoDB as back-end.
 
